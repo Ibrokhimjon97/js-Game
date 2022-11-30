@@ -1,25 +1,76 @@
 .game {
-    width: 600px;
-    height: 200px;
+    width: 700px;
+    height: 700px;
     border-bottom: 1px solid black;
 }
 
 #biz {
-    width: 50px;
-    height: 50px;
+    width: 300px;
+    height: 300px;
     background-image: url(/images/Cutout.png);
-    background-size: 50px 50px;
+    background-size: 150px 200px;
     position: relative;
-    top: 150px;
+    top: 400px;
+    background-repeat: no-repeat;
 }
 
 #akasi {
-    width: 20px;
-    height: 40px;
+    width: 200px;
+    height: 300px;
     background-image: url(/images/A44A0555.png);
-    background-size: 30px 50px;
+    background-size: 150px 100px;
     position: relative;
-    top: 110px;
-    left: 580px;
-    animation: akasiMove 1s infinite linear;
+    top: 200px;
+    left: 800px;
+    animation: akasiMove 2s infinite linear;
+    background-repeat: no-repeat;
+}
+
+@keyframes akasiMove {
+    0% {
+        left: 800px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 4s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 50px;
+    }
+    10% {
+        top: 75px;
+    }
+    20% {
+        top: 100px;
+    }
+    30% {
+        top: 120px;
+    }
+    40% {
+        top: 140px;
+    }
+    50% {
+        top: 120px;
+    }
+    60% {
+        bottom: 100px;
+    }
+    70% {
+        bottom: 80px;
+    }
+    80% {
+        bottom: 50px;
+    }
+    90% {
+        bottom: 40px;
+    }
+    100% {
+        bottom: 20px;
+    }
 }
